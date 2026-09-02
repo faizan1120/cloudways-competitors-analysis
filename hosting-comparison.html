@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f7f7f5;
+    color: #1a1a1a;
+    padding: 24px;
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: #666; font-size: 13px; margin-bottom: 20px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e5e3df;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .card.highlight { border: 2px solid #cc785c; }
+  .card h3 { margin: 0 0 6px; font-size: 15px; }
+  .price { font-size: 20px; font-weight: 600; color: #cc785c; }
+  .price small { font-size: 11px; color: #888; font-weight: 400; }
+  .tag { display: inline-block; font-size: 11px; background: #f0eee9; color: #555; border-radius: 12px; padding: 2px 8px; margin: 2px 4px 0 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; border-radius: 10px; overflow: hidden; }
+  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { background: #f0eee9; font-weight: 600; position: sticky; top: 0; }
+  tr:last-child td { border-bottom: none; }
+  .col-cw { background: #fdf3ee; }
+  section { margin-bottom: 28px; }
+  h2 { font-size: 16px; border-bottom: 1px solid #e5e3df; padding-bottom: 6px; margin-bottom: 12px; }
+  .note { font-size: 12px; color: #888; margin-top: 6px; }
+  .table-wrap { overflow-x: auto; border-radius: 10px; border: 1px solid #e5e3df; }
+</style>
+</head>
+<body>
+
+<h1>Cloudways vs. Hosting Competitors</h1>
+<div class="sub">Comparison snapshot — pricing and features as researched September 2026. Renewal/promo pricing varies; check provider sites before purchasing.</div>
+
+<section>
+<h2>Starting Price Snapshot</h2>
+<div class="grid">
+  <div class="card highlight">
+    <h3>Cloudways</h3>
+    <div class="price">$11<small>/mo (DO), pay-as-you-go</small></div>
+    <span class="tag">Managed cloud (VPS)</span><span class="tag">No lock-in contracts</span>
+  </div>
+  <div class="card">
+    <h3>Hostinger</h3>
+    <div class="price">$2.99<small>/mo, 48-mo term</small></div>
+    <span class="tag">Shared/Cloud/VPS</span><span class="tag">Renews ~$10.99/mo</span>
+  </div>
+  <div class="card">
+    <h3>Bluehost</h3>
+    <div class="price">$1.99–2.95<small>/mo intro</small></div>
+    <span class="tag">Shared/WP/Cloud</span><span class="tag">Renews ~$9.99+/mo</span>
+  </div>
+  <div class="card">
+    <h3>SiteGround</h3>
+    <div class="price">$2.99<small>/mo intro (1st yr)</small></div>
+    <span class="tag">Shared/Cloud</span><span class="tag">Renews $17.99+/mo</span>
+  </div>
+  <div class="card">
+    <h3>WP Engine</h3>
+    <div class="price">$25–30<small>/mo (annual)</small></div>
+    <span class="tag">Managed WordPress only</span><span class="tag">Traffic overage fees</span>
+  </div>
+  <div class="card">
+    <h3>UltaHost</h3>
+    <div class="price">$5.99<small>/mo VPS</small></div>
+    <span class="tag">Shared/VPS/Dedicated</span><span class="tag">Fixed renewal pricing</span>
+  </div>
+  <div class="card">
+    <h3>Kinsta</h3>
+    <div class="price">$35<small>/mo (Starter)</small></div>
+    <span class="tag">Managed WP + App/DB hosting</span><span class="tag">Google Cloud infra</span>
+  </div>
+  <div class="card">
+    <h3>GoDaddy</h3>
+    <div class="price">$5.99<small>/mo, 36-mo term</small></div>
+    <span class="tag">Shared/WP/VPS/Dedicated</span><span class="tag">Broad domain ecosystem</span>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Feature Comparison</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>Provider</th>
+  <th class="col-cw">Cloudways</th>
+  <th>Hostinger</th>
+  <th>Bluehost</th>
+  <th>SiteGround</th>
+  <th>WP Engine</th>
+  <th>UltaHost</th>
+  <th>Kinsta</th>
+  <th>GoDaddy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><b>Hosting model</b></td>
+  <td class="col-cw">Managed cloud platform on top of DO/AWS/GCP/Vultr/Linode</td>
+  <td>Shared, Cloud, VPS</td>
+  <td>Shared, WP, Cloud</td>
+  <td>Shared, Cloud, managed WP</td>
+  <td>Managed WordPress only</td>
+  <td>Shared, VPS, Dedicated, Cloud</td>
+  <td>Managed WP + App/DB/Static hosting</td>
+  <td>Shared, WP, VPS, Dedicated</td>
+</tr>
+<tr>
+  <td><b>Node.js support</b></td>
+  <td class="col-cw">Yes — dedicated Node.js app type + custom apps</td>
+  <td>Yes (VPS/cloud)</td>
+  <td>Limited (VPS only)</td>
+  <td>No native Node.js product</td>
+  <td>No (WordPress-only)</td>
+  <td>Yes (VPS)</td>
+  <td>Yes (Application Hosting)</td>
+  <td>Limited (VPS only)</td>
+</tr>
+<tr>
+  <td><b>Git / CI-CD deploys</b></td>
+  <td class="col-cw">Built-in Git deploy tab, SSH key auth</td>
+  <td>Git via VPS/panel</td>
+  <td>Limited</td>
+  <td>Git for cloud/dev tools</td>
+  <td>Git push deploys</td>
+  <td>Manual/VPS-based</td>
+  <td>Built-in Git deploys</td>
+  <td>Limited</td>
+</tr>
+<tr>
+  <td><b>Pricing model</b></td>
+  <td class="col-cw">Pay-as-you-go, no contracts, transparent scaling</td>
+  <td>Long-term contracts (12–48 mo) cheaper upfront</td>
+  <td>Long-term contracts, steep renewal jump</td>
+  <td>Annual, steep renewal jump</td>
+  <td>Monthly/annual, traffic-based overages</td>
+  <td>Fixed renewal (no bait-and-switch)</td>
+  <td>Monthly, visit-based tiers</td>
+  <td>Long-term contracts, steep renewal jump</td>
+</tr>
+<tr>
+  <td><b>Best for</b></td>
+  <td class="col-cw">Developers/agencies wanting cloud flexibility w/o server admin</td>
+  <td>Budget shared hosting, beginners</td>
+  <td>Beginners, WordPress.org partner</td>
+  <td>Performance-focused WP sites</td>
+  <td>High-traffic WordPress/enterprise</td>
+  <td>Budget VPS, predictable pricing</td>
+  <td>Premium WP + broader app hosting</td>
+  <td>Domains + hosting bundle buyers</td>
+</tr>
+<tr>
+  <td><b>Support</b></td>
+  <td class="col-cw">24/7 live chat, no phone support</td>
+  <td>24/7 live chat</td>
+  <td>24/7 chat/phone</td>
+  <td>24/7 priority chat (higher tiers)</td>
+  <td>24/7 chat, dedicated for enterprise</td>
+  <td>24/7 expert team</td>
+  <td>24/7 expert support</td>
+  <td>24/7 phone/chat</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note">Sources: cloudways.com, hostinger.com, bluehost.com, siteground.com, wpengine.com, ultahost.com, kinsta.com, godaddy.com and third-party pricing trackers (Sept 2026). Renewal pricing especially varies by promo/term — verify at checkout.</div>
+</section>
+
+<section>
+<h2>Where Cloudways Differentiates</h2>
+<table>
+<tr><td style="width:20%"><b>No lock-in</b></td><td>Pay-as-you-go by the hour/month; unlike most competitors, no long-term contract needed to get a reasonable price.</td></tr>
+<tr><td><b>Multi-cloud choice</b></td><td>Pick the underlying infrastructure — DigitalOcean, Vultr, Linode, AWS, or Google Cloud — rather than being locked to one host's own data centers.</td></tr>
+<tr><td><b>Developer-first</b></td><td>Native support for PHP, Node.js, Python, and custom apps (not just WordPress), plus Git-based deploys, staging, and SSH access out of the box.</td></tr>
+<tr><td><b>Trade-off</b></td><td>No phone support, and it requires more technical comfort than "bundled" hosts like Bluehost/GoDaddy aimed at total beginners.</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Industry Context (Sept 2026)</h2>
+<table>
+<tr><td style="width:20%"><b>AI-driven ops</b></td><td>AIOps for predictive scaling, automated security patching, and AI-powered support chat are now standard across major hosts.</td></tr>
+<tr><td><b>Consolidation</b></td><td>Growing concentration around hyperscale infrastructure (AWS/GCP/Azure-backed) to support AI workloads, while niche/specialized hosts (Kinsta's app hosting, WP Engine's enterprise WP) carve out premium tiers.</td></tr>
+<tr><td><b>Market growth</b></td><td>Global hosting market projected to reach ~$178.8B by 2026, up from ~$95B in 2022, driven by cloud migration.</td></tr>
+<tr><td><b>Pricing pressure</b></td><td>Steep "renewal cliffs" (Bluehost, SiteGround, GoDaddy) are under increasing scrutiny/criticism, giving pay-as-you-go and fixed-renewal models (Cloudways, UltaHost) a positioning edge.</td></tr>
+</table>
+</section>
+
+</body>
+</html>

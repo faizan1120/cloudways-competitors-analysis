@@ -1,0 +1,15 @@
+{
+  "name": "cloudways-node-app",
+  "version": "1.0.0",
+  "description": "Starter Node.js app for deployment on Cloudways",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
